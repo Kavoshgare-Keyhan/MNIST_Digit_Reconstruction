@@ -84,7 +84,7 @@ if __name__ == "__main__":
     )
     parser.add_argument("--dist_url", default=f"tcp://127.0.0.1:{port}")
     parser.add_argument("--batch_size", type=int, default=64)
-    parser.add_argument("--ckpt_vqvae", type=str, default="//home/abghamtm/work/mnist_vqvae/checkpoint/vqvae/flat_vqvae_.pt")
+    parser.add_argument("--ckpt_vqvae", type=str, default="//home/abghamtm/work/mnist_vqvae/checkpoint/vqvae/flat_vqvae_099.pt")
     parser.add_argument("--save_path", type=str, default="/home/abghamtm/work/mnist_vqvae/reconstructed_images/test")
     args = parser.parse_args()
 
