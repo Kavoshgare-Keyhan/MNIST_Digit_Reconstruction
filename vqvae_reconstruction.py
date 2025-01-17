@@ -32,7 +32,7 @@ def reconstruct_100Class(model, loader, device, save_path):
             for idx, (img, out) in enumerate(zip(images, outputs)):
                 save_file = os.path.join(save_path, f"reconstructed_{i * loader.batch_size + idx + 1:05d}.png")
                 utils.save_image(
-                    torch.cat([img,out.unsqueeze(0)], 0),
+                    torch.cat([img.unsqueeze(0),out.unsqueeze(0)], 0),
                     save_file,
                     nrow=2,
                     normalize=True,
